@@ -2,6 +2,8 @@ from selenium.webdriver.common.by import By
 
 
 class AddressForm:
+    # Here we have declared the variable and pass it to the specified method to get the accurate location path
+    
     add_address_button = (By.XPATH, "//a[@id='add-new-address-popover-link']")
     first_name = (By.XPATH , "//input[@id='address-ui-widgets-enterAddressFullName']")
     mobile_number = (By.XPATH, "//input[@id='address-ui-widgets-enterAddressPhoneNumber']")
