@@ -4,6 +4,7 @@ from Utilities.AddressForm import AddressForm
 
 
 class HomePage:
+    # Here we have declared the variable and pass it to the specified method to get the accurate location path
 
     search_bar = (By.XPATH, "//input[@id='twotabsearchtextbox']")
     item_text_footer = (By.CSS_SELECTOR, "div div div div h2 span")
@@ -16,9 +17,6 @@ class HomePage:
     opt_on_your_phone = (By.CSS_SELECTOR, "span input[id='continue']")
     enter_otp_field = (By.XPATH,"//div[@id='cvf-input-code-container']")
     submit_otp_continue_button = (By.XPATH, "(//span[@id='cvf-submit-otp-button'])[1]")
-
-
-
 
     def __init__(self, driver):
         self.driver = driver
@@ -61,3 +59,6 @@ class HomePage:
 
     def getSubmitOTPButton(self):
         return self.driver.find_element(*self.submit_otp_continue_button)
+
+    def getCartItemCount(self):
+        pass
