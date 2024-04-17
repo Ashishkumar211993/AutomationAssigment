@@ -6,7 +6,7 @@ from selenium.webdriver.support.select import Select
 from test.BaseClass import BaseClass
 from test.HomePageObject import HomePage
 
-
+# We have created a Test Add to Cart Class where the Test case execution will be start
 class Test_add_to_cart(BaseClass):
     driver = None
     pincode = 201301
