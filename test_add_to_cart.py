@@ -43,8 +43,7 @@ class Test_add_to_cart(BaseClass):
         homepage.getProceedToCart().click()
         time.sleep(2)
 
-
-
-
+        cart_count = homepage.getCartItemCount()
+        assert(cart_count, 1, "Item was not added to the cart successfully")
 
 
